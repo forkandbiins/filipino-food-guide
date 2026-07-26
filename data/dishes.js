@@ -32,4 +32,4 @@ const dishes = [
         description:
             "A Filipino classic cooked with soy sauce, vinegar, garlic, peppercorns, and bay leaves."
     }
-];s
+]
