@@ -3,74 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🇵🇭 Filipino Food Guide</title>
+    <title>Filipino Food Guide</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+
+    <!-- ========================= -->
+    <!-- Header -->
+    <!-- ========================= -->
+
     <header>
-        <div class="brand">
-            <a href="index.html" class="brand-link">
-                <span class="logo">🇵🇭</span>
-                <h1>Filipino Food Guide</h1>
-            </a>
+
+        <div class="container">
+
+            <div class="brand">
+
+                <a href="index.html" class="brand-link">
+
+                    <span class="logo">🇵🇭</span>
+
+                    <div class="brand-text">
+                        <h1>Filipino Food Guide</h1>
+                        <p>Cooking one dish at a time.</p>
+                    </div>
+
+                </a>
+
+            </div>
+
+            <nav>
+
+                <ul>
+
+                    <li>
+                        <a href="index.html" class="active">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="browse.html">
+                            Browse
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
         </div>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="browse.html">Browse</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
     </header>
 
+    <!-- ========================= -->
+    <!-- Hero -->
+    <!-- ========================= -->
+
     <main>
-        <!-- Hero Section -->
+
         <section class="hero">
-            <h2>Learning web development, one Filipino dish at a time.</h2>
 
-            <p>
-                Welcome to my personal Filipino Food Guide.
-                This project documents the Filipino dishes I've learned to cook
-                while practicing HTML, CSS, and JavaScript.
-            </p>
+            <div class="container">
 
-            <a href="browse.html" class="button">
-                Explore Dishes →
-            </a>
+                <h2>
+                    A personal Filipino food journey.
+                </h2>
+
+                <p>
+                    Welcome to my Filipino Food Guide! This website serves as my
+                    personal collection of the Filipino dishes I've learned to cook
+                    while also practicing HTML, CSS, and JavaScript.
+                </p>
+
+                <a href="browse.html" class="btn">
+                    Browse My Dishes →
+                </a>
+
+            </div>
+
         </section>
 
-        <!-- Featured Dishes -->
+        <!-- ========================= -->
+        <!-- Dishes -->
+        <!-- ========================= -->
+
         <section class="featured">
-            <h2>Featured Dishes</h2>
-            
-            <div class="featured-grid">
-                <article class="dish-card">
-                    <h3>Sinigang</h3>
-                    <p>A sour tamarind-based soup loved across the Philippines.</p>
-                </article>
 
-                <article class="dish-card">
-                    <h3>Adobo</h3>
-                    <p>A classic Filipino dish cooked with soy sauce and vinegar.</p>
-                </article>
+            <div class="container">
+
+                <h2>Dishes I've Learned</h2>
+
+                <div class="dish-grid">
+
+                    <article class="dish-card">
+
+                        <img
+                            src="assets/images/sinigang.jpg"
+                            alt="Sinigang">
+
+                        <div class="dish-content">
+
+                            <h3>🍲 Sinigang</h3>
+
+                            <p>
+                                A comforting sour soup made with tamarind,
+                                vegetables, and pork. One of the first Filipino
+                                dishes I learned to cook.
+                            </p>
+
+                            <a href="browse.html" class="card-link">
+                                Learn More →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                    <article class="dish-card">
+
+                        <img
+                            src="assets/images/adobo.jpg"
+                            alt="Chicken Adobo">
+
+                        <div class="dish-content">
+
+                            <h3>🍗 Chicken Adobo</h3>
+
+                            <p>
+                                A Filipino classic cooked with soy sauce,
+                                vinegar, garlic, peppercorns, and bay leaves.
+                            </p>
+
+                            <a href="browse.html" class="card-link">
+                                Learn More →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
             </div>
+
         </section>
 
-        <!-- Categories -->
-        <section class="categories">
-            <h2>Browse by Category</h2>
-
-            <div class="category-grid">
-                <div>Main Dishes 🍲</div>
-                <div>Noodles 🍜</div>
-                <div>Vegetables 🥬</div>
-                <div>Desserts 🍰</div>
-            </div>
-        </section>
     </main>
 
+    <!-- ========================= -->
+    <!-- Footer -->
+    <!-- ========================= -->
+
     <footer>
-        <p>&copy; 2026 Filipino Food Guide</p>
-    </footer> 
+
+        <div class="container">
+
+            <p>
+                © 2026 Filipino Food Guide • Built by Charles
+            </p>
+
+            <p>
+                Learning web development, one Filipino dish at a time.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+
 </body>
 </html>
