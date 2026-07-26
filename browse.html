@@ -1,40 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🇵🇭 Filipino Food Guide</title>
+    <title>Browse | Filipino Food Guide</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+
+    <!-- ========================= -->
+    <!-- Header -->
+    <!-- ========================= -->
+
     <header>
-        <div class="brand">
-            <a href="index.html" class="brand-link">
-                <span class="logo">🇵🇭</span>
-                <h1>Filipino Food Guide</h1>
-            </a>
+
+        <div class="container">
+
+            <div class="brand">
+
+                <a href="index.html" class="brand-link">
+
+                    <span class="logo">🇵🇭</span>
+
+                    <div class="brand-text">
+                        <h1>Filipino Food Guide</h1>
+                        <p>Cooking one dish at a time.</p>
+                    </div>
+
+                </a>
+
+            </div>
+
+            <nav>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li>
+                        <a href="browse.html" class="active">
+                            Browse
+                        </a>
+                    </li>
+
+                    <li><a href="about.html">About</a></li>
+
+                </ul>
+
+            </nav>
+
         </div>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="browse.html">Browse</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
     </header>
 
+    <!-- ========================= -->
+    <!-- Main -->
+    <!-- ========================= -->
+
     <main>
-        <h2>Browse Filipino Dishes</h2>
-        
-        <!-- Search Bar -->
 
-        <!-- Filter -->
+        <section class="page-header">
 
-        <!-- Dish Cards -->
+            <div class="container">
+
+                <h2>Browse My Dishes</h2>
+
+                <p>
+                    As I learn more Filipino recipes, they'll be added here.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Search -->
+
+        <section class="search-section">
+
+            <div class="container">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search a dish...">
+
+            </div>
+
+        </section>
+
+        <!-- Dish List -->
+
+        <section class="browse-section">
+
+            <div class="container">
+
+                <div id="dishContainer" class="dish-grid">
+
+                    <!-- JavaScript inserts dish cards here -->
+
+                </div>
+
+            </div>
+
+        </section>
+
     </main>
 
+    <!-- ========================= -->
+    <!-- Footer -->
+    <!-- ========================= -->
+
     <footer>
-        <p>&copy; 2026 Filipino Food Guide</p>
+
+        <div class="container">
+
+            <p>
+                © 2026 Filipino Food Guide • Built by Charles
+            </p>
+
+            <p>
+                Learning web development, one Filipino dish at a time.
+            </p>
+
+        </div>
+
     </footer>
+
+    <script src="data/dishes.js"></script>
+    <script src="js/script.js"></script>
+
 </body>
+
 </html>
