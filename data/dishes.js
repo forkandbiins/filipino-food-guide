@@ -6,14 +6,34 @@ const dishes = [
 
         image: "assets/images/sinigang.jpg",
 
+        shortDescription:
+            "A sour and comforting Filipino soup.",
+
         category: "Soup",
 
-        difficulty: "Beginner",
+        difficulty: "Intermediate",
 
-        cookTime: "60 minutes",
+        learned: true,
 
-        description:
-            "A comforting sour soup made with tamarind, vegetables, and pork. One of the very first Filipino dishes I learned to cook."
+        featured: true,
+
+        dateLearned: "2026-07-26",
+
+        ingredients: [
+            "Pork",
+            "Tamarind",
+            "Water spinach",
+            "Radish",
+            "Tomato"
+        ],
+
+        steps: [
+            "Boil the pork until tender.",
+            "Add tomatoes and radish.",
+            "Add tamarind mix.",
+            "Add vegetables.",
+            "Season and serve."
+        ]
     },
 
     {
@@ -23,13 +43,33 @@ const dishes = [
 
         image: "assets/images/adobo.jpg",
 
-        category: "Main Dish",
+        shortDescription:
+            "A savory chicken dish simmered in soy sauce and vinegar.",
+
+        category: "Meat",
 
         difficulty: "Beginner",
 
-        cookTime: "45 minutes",
+        learned: true,
 
-        description:
-            "A Filipino classic cooked with soy sauce, vinegar, garlic, peppercorns, and bay leaves."
+        featured: true,
+
+        dateLearned: "2026-07-26",
+
+        ingredients: [
+            "Chicken",
+            "Soy sauce",
+            "Vinegar",
+            "Garlic",
+            "Bay leaves"
+        ],
+
+        steps: [
+            "Marinate the chicken.",
+            "Brown the chicken.",
+            "Add sauce ingredients.",
+            "Simmer until tender.",
+            "Reduce the sauce."
+        ]
     }
-]
+];

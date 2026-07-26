@@ -71,92 +71,66 @@
 
         <section class="hero">
 
-            <div class="container">
+            <div class="container hero-container">
 
-                <h2>
-                    A personal Filipino food journey.
-                </h2>
+                <!-- Left Side -->
+                <div class="hero-text">
 
-                <p>
-                    Welcome to my Filipino Food Guide! This website serves as my
-                    personal collection of the Filipino dishes I've learned to cook
-                    while also practicing HTML, CSS, and JavaScript.
-                </p>
+                    <h2>
+                        Filipino Food Guide
+                    </h2>
 
-                <a href="browse.html" class="btn">
-                    Browse My Dishes →
-                </a>
+                    <p>
+                        A personal collection of Filipino dishes
+                        I have learned to cook, documenting my journey
+                        one recipe at a time.
+                    </p>
 
-            </div>
-
-        </section>
-
-        <!-- ========================= -->
-        <!-- Dishes -->
-        <!-- ========================= -->
-
-        <section class="featured">
-
-            <div class="container">
-
-                <h2>Dishes I've Learned</h2>
-
-                <div class="dish-grid">
-
-                    <article class="dish-card">
-
-                        <img
-                            src="assets/images/sinigang.jpg"
-                            alt="Sinigang">
-
-                        <div class="dish-content">
-
-                            <h3>🍲 Sinigang</h3>
-
-                            <p>
-                                A comforting sour soup made with tamarind,
-                                vegetables, and pork. One of the first Filipino
-                                dishes I learned to cook.
-                            </p>
-
-                            <a href="browse.html" class="card-link">
-                                Learn More →
-                            </a>
-
-                        </div>
-
-                    </article>
-
-                    <article class="dish-card">
-
-                        <img
-                            src="assets/images/adobo.jpg"
-                            alt="Chicken Adobo">
-
-                        <div class="dish-content">
-
-                            <h3>🍗 Chicken Adobo</h3>
-
-                            <p>
-                                A Filipino classic cooked with soy sauce,
-                                vinegar, garlic, peppercorns, and bay leaves.
-                            </p>
-
-                            <a href="browse.html" class="card-link">
-                                Learn More →
-                            </a>
-
-                        </div>
-
-                    </article>
+                    <a href="browse.html" class="btn">
+                        Browse My Dishes
+                    </a>
 
                 </div>
 
+
+                <!-- Right Side -->
+                <div class="hero-spotlight">
+
+                    <h3>
+                        Kitchen Spotlight
+                    </h3>
+
+
+                    <div class="carousel">
+
+                        <button id="prevBtn" class="carousel-btn">
+                            &#10094;
+                        </button>
+
+
+                        <div id="carouselTrack" class="carousel-track">
+
+                        </div>
+
+
+                        <button id="nextBtn" class="carousel-btn">
+                            &#10095;
+                        </button>
+
+                    </div>
+
+
+                    <div id="carouselDots" class="carousel-dots">
+
+                    </div>
+
+
+                </div>
+
+
             </div>
 
         </section>
-
-    </main>
 
     <!-- ========================= -->
     <!-- Footer -->
@@ -178,7 +152,8 @@
 
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="data/dishes.js"></script>
+    <script src="js/carousel.js"></script>
 
 </body>
 </html>
